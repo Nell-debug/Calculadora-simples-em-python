@@ -19,11 +19,12 @@ elif op == "x":
 elif op == "/":
   resultado = n1 / n2
 elif op == "v":
-   resultado = math.sqrt(n1)
+   resultado = math.sqrt(n1) 
 else:
    print("Operador inválido")
-
-if isinstance(resultado, float) and resultado.is_integer():
+if resultado == math.sqrt(n1):
+   print(f"{resultado : .2f}")
+elif isinstance(resultado, float) and resultado.is_integer():
    print(int(resultado))
 else:
    print(resultado)
